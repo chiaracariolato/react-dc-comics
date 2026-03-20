@@ -9,11 +9,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 a {
   color: black;
   text-decoration: none;
@@ -22,4 +17,56 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  padding: 0px 16px;
+  align-items: center;
+}
+
+ul li {
+  padding: 0px 4px;
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: bold;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 30px 4px;
+  /* text-decoration: none;
+  color: black;
+  transition: all 0.3s; */
+}
+
+ul li a:hover {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+
+.active {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+header img {
+  width: 64px;
+  height: 64px;
+  margin: 8px 16px;
+}
+
+figure {
+  display: flex;
+  align-items: center;
 }
