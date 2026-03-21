@@ -177,12 +177,19 @@ main {
 
 .list-container {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px;
 }
 
 
 
 /* Footer */
 
-footer {
+#prefooter {
   background-image: url('src/assets/img/footer-bg.jpg');
+}
+
+footer {
+  background-color: black;
 }

@@ -182,12 +182,96 @@ function App() {
     { id: 5, url: 'src/assets/img/buy-dc-power-visa.svg', text: 'DC POWER VISA' }
   ];
 
+  const dcComicsLink = [
+    { label: "Characters", url: '#' },
+    { label: "Comics", url: '#' },
+    { label: "Movies", url: '#' },
+    { label: "TV", url: '#' },
+    { label: "Games", url: '#' },
+    { label: "Videos", url: '#' },
+    { label: "News", url: '#' }
+  ];
+
+  const shopLink = [
+    { label: "Shop DC", url: '#' },
+    { label: "Shop DC Collectibles", url: '#' }
+  ];
+
+  const dcLink = [
+    { label: "Terms Of Use", url: "#" },
+    { label: "Privacy policy (New)", url: "#" },
+    { label: "Ad Choices", url: "#" },
+    { label: "Advertising", url: "#" },
+    { label: "Jobs", url: "#" },
+    { label: "Subscriptions", url: "#" },
+    { label: "Talent Workshops", url: "#" },
+    { label: "CPSC Certifications", url: "#" },
+    { label: "Ratings", url: "#" },
+    { label: "Shop Help", url: "#" },
+    { label: "Contact Us", url: "#" }
+  ];
+
+  const sitesLink = [
+    { label: "DC", url: "#" },
+    { label: "MAD Magazine", url: "#" },
+    { label: "DC Kids", url: "#" },
+    { label: "DC Universe", url: "#" },
+    { label: "DC Power Visa", url: "#" }
+  ];
+
+  const prefooterSection = [
+    {
+      title: "DC COMICS",
+      links: dcComicsLink
+    },
+    {
+      title: "SHOP",
+      links: shopLink
+    },
+    {
+      title: "DC",
+      links: dcLink
+    },
+    {
+      title: "SITES",
+      links: sitesLink
+    }
+  ];
+
+  const footerSection = [
+    {
+      label: "Facebook",
+      url: "#",
+      image: "src/assets/img/footer-facebook.png"
+    },
+    {
+      label: "Twitter",
+      url: "#",
+      image: "src/assets/img/footer-twitter.png"
+    },
+    {
+      label: "Youtube",
+      url: "#",
+      image: "src/assets/img/footer-youtube.png"
+    },
+    {
+      label: "Pinterest",
+      url: "#",
+      image: "src/assets/img/footer-pinterest.png"
+    },
+    {
+      label: "Periscope",
+      url: "#",
+      image: "src/assets/img/footer-periscope.png"
+    }
+  ];
+
   return (
     <>
       <Header links={links} />
       <Main comics={comics} />
       <Links footerLink={footerLink} />
-      <Footer />
+      <Footer prefooterSection={prefooterSection} footerSection={footerSection} />
     </>
   )
 }
