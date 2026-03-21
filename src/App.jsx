@@ -174,12 +174,19 @@ function App() {
     },
   ];
 
+  const footerLink = [
+    { id: 1, url: 'src/assets/img/buy-comics-digital-comics.png', text: 'DIGITAL COMICS' },
+    { id: 2, url: 'src/assets/img/buy-comics-merchandise.png', text: 'DC MERCHANDISE' },
+    { id: 3, url: 'src/assets/img/buy-comics-subscriptions.png', text: 'SUBSCRIPTION' },
+    { id: 4, url: 'src/assets/img/buy-comics-shop-locator.png', text: 'COMIC SHOP LOCATOR' },
+    { id: 5, url: 'src/assets/img/buy-dc-power-visa.svg', text: 'DC POWER VISA' }
+  ];
 
   return (
     <>
       <Header links={links} />
       <Main comics={comics} />
-      <Links />
+      <Links footerLink={footerLink} />
       <Footer />
     </>
   )

@@ -155,6 +155,28 @@ main {
 
 .links {
   background-color: blue;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.secondary-button {
+  font-size: 12px;
+  color: white;
+  background-color: transparent;
+  margin: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.secondary-button img {
+  height: 40px;
+}
+
+.list-container {
+  display: flex;
 }
 
 

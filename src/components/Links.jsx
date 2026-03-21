@@ -1,26 +1,20 @@
-export default function Links() {
+export default function Links(props) {
+    const { footerLink } = props;
+
+    const renderList = () => {
+        return footerLink.map((link) => (
+            <button className="secondary-button">
+                <img src={link.url} alt="" />
+                {link.text.toUpperCase()}
+            </button>
+        ))
+    }
+
     return (
         <div className="links">
-            <button className="secondary-button">
-                <img src="src/assets/img/buy-comics-digital-comics.png" alt="" />
-                DIGITAL COMICS
-            </button>
-            <button className="secondary-button">
-                <img src="src/assets/img/buy-comics-digital-comics.png" alt="" />
-                DC MERCHANDISE
-            </button>
-            <button className="secondary-button">
-                <img src="src/assets/img/buy-comics-digital-comics.png" alt="" />
-                SUBSCRIPTION
-            </button>
-            <button className="secondary-button">
-                <img src="src/assets/img/buy-comics-digital-comics.png" alt="" />
-                COMIC SHOP LOCATOR
-            </button>
-            <button className="secondary-button">
-                <img src="src/assets/img/buy-comics-digital-comics.png" alt="" />
-                DC POWER VISA
-            </button>
+            <div className="list-container container">
+                {renderList()}
+            </div>
         </div>
     )
 }
