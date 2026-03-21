@@ -1,6 +1,6 @@
 export default function Links() {
     return (
-        <div>
+        <div className="links">
             <button className="secondary-button">
                 <img src="src/assets/img/buy-comics-digital-comics.png" alt="" />
                 DIGITAL COMICS
