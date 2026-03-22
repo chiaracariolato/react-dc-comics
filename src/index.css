@@ -185,29 +185,38 @@ main {
 
 
 /* Footer */
-
 #prefooter {
   background-image: url('src/assets/img/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#prefooter h4 {
+.prefooter-link-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  column-gap: 40px;
+  padding: 24px 0px;
+  height: 350px
+}
+
+.prefooter-link-container h4 {
   color: white;
   padding-bottom: 8px;
 }
 
 .prefooter-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   height: 350px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 16px;
-  padding: 24px;
+  overflow: hidden;
 }
 
 .link-section {
-  box-sizing: border-box;
+  margin-bottom: 16px;
 }
 
 .button-link {

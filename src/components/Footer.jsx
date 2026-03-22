@@ -31,9 +31,13 @@ export default function Footer(props) {
             <div id="prefooter">
                 <div className="container">
                     <div className="prefooter-container">
-                        {renderPrefooter()}
+                        <div className="prefooter-link-container">
+                            {renderPrefooter()}
+                        </div>
+                        <figure>
+                            <img src="src/assets/img/dc-logo-bg.png" alt="Logo" />
+                        </figure>
                     </div>
-
                 </div>
             </div>
             <div id="footer">
