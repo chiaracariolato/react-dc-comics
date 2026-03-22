@@ -190,6 +190,70 @@ main {
   background-image: url('src/assets/img/footer-bg.jpg');
 }
 
-footer {
-  background-color: black;
+#prefooter h4 {
+  color: white;
+  padding-bottom: 8px;
+}
+
+.prefooter-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 350px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 24px;
+}
+
+.link-section {
+  box-sizing: border-box;
+}
+
+.button-link {
+  list-style-type: none;
+}
+
+.button-link a {
+  color: lightgray;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+
+#footer {
+  background-color: #303030;
+  height: 100px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.outline-button {
+  color: white;
+  border: 2px solid #3770E3;
+  background-color: transparent;
+  padding: 8px 16px;
+}
+
+.text-button {
+  color: #3770E3;
+  background-color: transparent;
+  font-size: large;
+  font-weight: bold;
+  margin: 0px 24px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-button {
+  background: transparent;
 }

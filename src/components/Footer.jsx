@@ -3,11 +3,11 @@ export default function Footer(props) {
 
     const renderPrefooter = () => {
         return prefooterSection.map((section, i) => (
-            <div key={i}>
+            <div key={i} className="link-section">
                 <h4>{section.title}</h4>
                 <ul>{
                     section.links.map((link, index) => (
-                        <li key={index}>
+                        <li key={index} className="button-link">
                             <a href={link.url} > {link.label}</a>
                         </li>
                     ))
@@ -28,12 +28,24 @@ export default function Footer(props) {
 
     return (
         <section>
-            <div id="prefooter">{renderPrefooter()}</div>
+            <div id="prefooter">
+                <div className="container">
+                    <div className="prefooter-container">
+                        {renderPrefooter()}
+                    </div>
+
+                </div>
+            </div>
             <div id="footer">
-                <button className="outline-button">
-                    SIGN-UP-NOW
-                </button>
-                {renderFooter()}
+                <div className="container footer-container">
+                    <button className="outline-button">
+                        SIGN-UP NOW!
+                    </button>
+                    <div className="social">
+                        <button className="text-button">FOLLOW US</button>
+                        {renderFooter()}
+                    </div>
+                </div>
             </div>
         </section>
     )
